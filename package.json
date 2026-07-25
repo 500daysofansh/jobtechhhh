@@ -1,0 +1,18 @@
+{
+  "name": "sarkari-jobs-aggregator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:migrate": "node scripts/migrate.js",
+    "scrape:ssc": "node scraper/runner.js ssc",
+    "scrape:all": "node scraper/runner.js all",
+    "dev:api": "node api/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "pg": "^8.22.0",
+    "playwright": "^1.47.0"
+  }
+}
